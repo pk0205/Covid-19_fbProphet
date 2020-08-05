@@ -1,0 +1,1989 @@
+{
+  "bytes": 827172315,
+  "count_of_rows": 1374457,
+  "datahub": {
+    "created": "2020-03-22T16:03:58.514457",
+    "findability": "published",
+    "flowid": "core/covid-19/525",
+    "modified": "2020-08-01T15:28:51.242474",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "5218568dcc5ed65762319c147a6d9034",
+  "id": "core/covid-19",
+  "name": "covid-19",
+  "profile": "data-package",
+  "resources": [
+    {
+      "bytes": 2688307,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/476422654afa47686e2e97a03fb421fb.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "476422654afa47686e2e97a03fb421fb",
+      "mediatype": "text/csv",
+      "name": "time-series-19-covid-combined_original",
+      "path": "archive/time-series-19-covid-combined.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 11346,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/2e31e0f7eb01dddb761271d2393dbe34.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "2e31e0f7eb01dddb761271d2393dbe34",
+      "mediatype": "text/csv",
+      "name": "key-countries-pivoted_original",
+      "path": "archive/key-countries-pivoted.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "China",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "US",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "United_Kingdom",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Italy",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "France",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Germany",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Spain",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Iran",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 1143198,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/2adc634c289cab1e8b0133bb21dd35a4.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "2adc634c289cab1e8b0133bb21dd35a4",
+      "mediatype": "text/csv",
+      "name": "countries-aggregated_original",
+      "path": "archive/countries-aggregated.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 9842,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/1be4ae3b12038ab1f2f20d51a0d97af7.csv",
+      "encoding": "ISO-8859-2",
+      "format": "csv",
+      "hash": "1be4ae3b12038ab1f2f20d51a0d97af7",
+      "mediatype": "text/csv",
+      "name": "worldwide-aggregated_original",
+      "path": "archive/worldwide-aggregated.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Inrease rate from the previous day in percentage.",
+            "groupChar": "",
+            "name": "Increase rate",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 71642294,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/b5f090ff9642faba65caa699459057cf.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "b5f090ff9642faba65caa699459057cf",
+      "mediatype": "text/csv",
+      "name": "us_confirmed_original",
+      "path": "archive/us_confirmed.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "FIPS",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Case",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 75012751,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/d4659b2742f60f9ca36a83968c37e2e6.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "d4659b2742f60f9ca36a83968c37e2e6",
+      "mediatype": "text/csv",
+      "name": "us_deaths_original",
+      "path": "archive/us_deaths.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "FIPS",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Case",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 403115,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/c771d1c1fde0822fc5864e1a5205429b.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "c771d1c1fde0822fc5864e1a5205429b",
+      "mediatype": "text/csv",
+      "name": "reference_original",
+      "path": "archive/reference.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FIPS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province_State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country_Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long_",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 4363,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/validation_report/data/3a7dc90edfeb88b1db1dcd0ee4a7e0e7/validation_report.json",
+      "format": "json",
+      "hash": "3a7dc90edfeb88b1db1dcd0ee4a7e0e7",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 2688307,
+      "datahub": {
+        "derivedFrom": [
+          "time-series-19-covid-combined"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/time-series-19-covid-combined_csv/data/16e856c5390b3daebcdc34f20a09806b/time-series-19-covid-combined_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "16e856c5390b3daebcdc34f20a09806b",
+      "mediatype": "text/csv",
+      "name": "time-series-19-covid-combined_csv",
+      "path": "data/time-series-19-covid-combined_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 51264,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 11346,
+      "datahub": {
+        "derivedFrom": [
+          "key-countries-pivoted"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/key-countries-pivoted_csv/data/cf08d37633428fe149c6e272cbd5d35b/key-countries-pivoted_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "cf08d37633428fe149c6e272cbd5d35b",
+      "mediatype": "text/csv",
+      "name": "key-countries-pivoted_csv",
+      "path": "data/key-countries-pivoted_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 192,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "China",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "US",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "United_Kingdom",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Italy",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "France",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Germany",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Spain",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Iran",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1143198,
+      "datahub": {
+        "derivedFrom": [
+          "countries-aggregated"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/countries-aggregated_csv/data/5f33b15000b8d6dfba263b07bf3472b5/countries-aggregated_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "5f33b15000b8d6dfba263b07bf3472b5",
+      "mediatype": "text/csv",
+      "name": "countries-aggregated_csv",
+      "path": "data/countries-aggregated_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 36096,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 9842,
+      "datahub": {
+        "derivedFrom": [
+          "worldwide-aggregated"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/worldwide-aggregated_csv/data/f02add8eedfadfeeedcf6a1ff6dc7aaa/worldwide-aggregated_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f02add8eedfadfeeedcf6a1ff6dc7aaa",
+      "mediatype": "text/csv",
+      "name": "worldwide-aggregated_csv",
+      "path": "data/worldwide-aggregated_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 192,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Inrease rate from the previous day in percentage.",
+            "groupChar": "",
+            "name": "Increase rate",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 71642294,
+      "datahub": {
+        "derivedFrom": [
+          "us_confirmed"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/us_confirmed_csv/data/69d537763304df1fd4dc3f2d595e49f4/us_confirmed_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "69d537763304df1fd4dc3f2d595e49f4",
+      "mediatype": "text/csv",
+      "name": "us_confirmed_csv",
+      "path": "data/us_confirmed_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 641280,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "FIPS",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Case",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 75012751,
+      "datahub": {
+        "derivedFrom": [
+          "us_deaths"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/us_deaths_csv/data/61c91f20e0e7117a05385076451b50a5/us_deaths_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "61c91f20e0e7117a05385076451b50a5",
+      "mediatype": "text/csv",
+      "name": "us_deaths_csv",
+      "path": "data/us_deaths_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 641280,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "FIPS",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Case",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 403115,
+      "datahub": {
+        "derivedFrom": [
+          "reference"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/reference_csv/data/f3a75666d8669974c28cd3325ed811a1/reference_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f3a75666d8669974c28cd3325ed811a1",
+      "mediatype": "text/csv",
+      "name": "reference_csv",
+      "path": "data/reference_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 4153,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FIPS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province_State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country_Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long_",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 8358572,
+      "datahub": {
+        "derivedFrom": [
+          "time-series-19-covid-combined"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/time-series-19-covid-combined_json/data/2531705b578567388cf4755df5068f4b/time-series-19-covid-combined_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "2531705b578567388cf4755df5068f4b",
+      "mediatype": "text/csv",
+      "name": "time-series-19-covid-combined_json",
+      "path": "data/time-series-19-covid-combined_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 51264,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 30293,
+      "datahub": {
+        "derivedFrom": [
+          "key-countries-pivoted"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/key-countries-pivoted_json/data/303d45389c1a8207e40a502b1379f14c/key-countries-pivoted_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "303d45389c1a8207e40a502b1379f14c",
+      "mediatype": "text/csv",
+      "name": "key-countries-pivoted_json",
+      "path": "data/key-countries-pivoted_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 192,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "China",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "US",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "United_Kingdom",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Italy",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "France",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Germany",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Spain",
+            "type": "integer"
+          },
+          {
+            "description": "Cumulative total confirmed cases to date.",
+            "name": "Iran",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 3452918,
+      "datahub": {
+        "derivedFrom": [
+          "countries-aggregated"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/countries-aggregated_json/data/c60c678e89696f8cfeb241729e0d0182/countries-aggregated_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "c60c678e89696f8cfeb241729e0d0182",
+      "mediatype": "text/csv",
+      "name": "countries-aggregated_json",
+      "path": "data/countries-aggregated_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 36096,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 22856,
+      "datahub": {
+        "derivedFrom": [
+          "worldwide-aggregated"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/worldwide-aggregated_json/data/fe7407fc90afa38adfe3b0c34f4bf935/worldwide-aggregated_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "fe7407fc90afa38adfe3b0c34f4bf935",
+      "mediatype": "text/csv",
+      "name": "worldwide-aggregated_json",
+      "path": "data/worldwide-aggregated_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 192,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Confirmed",
+            "title": "Cumulative total confirmed cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Recovered",
+            "title": "Cumulative total recovered cases to date",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "groupChar": "",
+            "name": "Deaths",
+            "title": "Cumulative total deaths to date",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Inrease rate from the previous day in percentage.",
+            "groupChar": "",
+            "name": "Increase rate",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 174256984,
+      "datahub": {
+        "derivedFrom": [
+          "us_confirmed"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/us_confirmed_json/data/3e9053fb48578a84fad6c1fca8d294a2/us_confirmed_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "3e9053fb48578a84fad6c1fca8d294a2",
+      "mediatype": "text/csv",
+      "name": "us_confirmed_json",
+      "path": "data/us_confirmed_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 641280,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "FIPS",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Case",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 187246630,
+      "datahub": {
+        "derivedFrom": [
+          "us_deaths"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/us_deaths_json/data/551db0ec6cf6b02f507d4c203ce2f0e3/us_deaths_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "551db0ec6cf6b02f507d4c203ce2f0e3",
+      "mediatype": "text/csv",
+      "name": "us_deaths_json",
+      "path": "data/us_deaths_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 641280,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "FIPS",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Case",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          "None",
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1056527,
+      "datahub": {
+        "derivedFrom": [
+          "reference"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp6loi841f/core/covid-19/reference_json/data/22efe3777aacbb7fa0ec17117c0c6330/reference_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "22efe3777aacbb7fa0ec17117c0c6330",
+      "mediatype": "text/csv",
+      "name": "reference_json",
+      "path": "data/reference_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 4153,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FIPS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province_State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country_Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long_",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 10613,
+      "dpp:streamedFrom": "/tmp/tmppr1j8buw/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "title": "Novel Coronavirus 2019",
+  "views": [
+    {
+      "resources": [
+        "worldwide-aggregated"
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Confirmed",
+          "Deaths"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Total world to date"
+    },
+    {
+      "resources": [
+        "key-countries-pivoted"
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "China",
+          "US",
+          "United_Kingdom",
+          "Italy",
+          "France",
+          "Germany",
+          "Spain",
+          "Iran"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Number of confirmed cases in key countries"
+    },
+    {
+      "resources": [
+        {
+          "name": "worldwide-aggregated",
+          "transform": [
+            {
+              "asFields": [
+                "Mortality rate"
+              ],
+              "expressions": [
+                "data['Deaths'] / data['Confirmed'] * 100 + '%'"
+              ],
+              "type": "formula"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Mortality rate"
+        ],
+        "type": "bar"
+      },
+      "specType": "simple",
+      "title": "Mortality rate in percentage"
+    },
+    {
+      "resources": [
+        "worldwide-aggregated"
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Increase rate"
+        ],
+        "type": "bar"
+      },
+      "specType": "simple",
+      "title": "Increase rate from previous day in confirmed cases worldwide"
+    }
+  ]
+}
